@@ -1,0 +1,296 @@
+@import "./bootstrap.min.css";
+@import "./swiper.min.css";
+@import "./all.min.css";
+
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/louis-regular.eot');
+/*    src: url('../fonts/louis-regular.woff2') format('woff2'),*/
+/*         url('../fonts/louis-regular.woff') format('woff');*/
+/*				 url('../fonts/louis-regular.eot?#iefix') format('embedded-opentype'),*/
+         
+/*         url('../fonts/louis-regular.ttf') format('truetype'),*/
+/*         url('../fonts/louis-regular.svg#louisregular') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/louis-italic.eot');
+    src: url('../fonts/louis-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/louis-italic.woff2') format('woff2'),
+         url('../fonts/louis-italic.woff') format('woff'),
+         url('../fonts/louis-italic.ttf') format('truetype'),
+         url('../fonts/louis-italic.svg#louisitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/louis-condenseddemi.eot');
+    src: url('../fonts/louis-condenseddemi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/louis-condenseddemi.woff2') format('woff2'),
+         url('../fonts/louis-condenseddemi.woff') format('woff'),
+         url('../fonts/louis-condenseddemi.ttf') format('truetype'),
+         url('../fonts/louis-condenseddemi.svg#louiscondensed_demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/louis-cendence.eot');
+    src: url('../fonts/louis-cendence.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/louis-cendence.woff2') format('woff2'),
+         url('../fonts/louis-cendence.woff') format('woff'),
+         url('../fonts/louis-cendence.ttf') format('truetype'),
+         url('../fonts/louis-cendence.svg#louiscondensed_regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+*/
+
+/*
+@font-face {
+    font-family: 'Louis';
+    src: url('../fonts/louis-bold-italic.eot');
+    src: url('../fonts/louis-bold-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/louis-bold-italic.woff2') format('woff2'),
+         url('../fonts/louis-bold-italic.woff') format('woff'),
+         url('../fonts/louis-bold-italic.ttf') format('truetype'),
+         url('../fonts/louis-bold-italic.svg#louisbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+*/
+
+@font-face {
+    font-family: 'LouisBold';
+    src: url('../fonts/louis-bold.eot');
+    src: url('../fonts/louis-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/louis-bold.woff2') format('woff2'),
+         url('../fonts/louis-bold.woff') format('woff'),
+         url('../fonts/louis-bold.ttf') format('truetype'),
+         url('../fonts/louis-bold.svg#louisbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*General style start*/
+:root{
+	font-size: 62.5%;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:hover, a:active{
+	text-decoration: none;
+	color: #264773;
+}
+
+html {
+  font-size: 62.5%;
+	font-family: "Louis";
+}
+
+body{
+	overflow-x: hidden;
+	min-height: 100vh;
+	color: #264773;
+	font-size: 1.6rem;
+	font-family: "Louis", sans-serif;
+}
+
+.bg-blue{
+	background: #264773;
+}
+.bg-blue-hover{
+	transition: background 0.2s;
+}
+.bg-blue-hover:hover{
+	background: #264773;
+}
+.z-index-1{
+	z-index: 1;
+}
+.z-index-2{
+	z-index: 2;
+}
+.z-index-3{
+	z-index: 3;
+}
+.z-index-4{
+	z-index: 4;
+}
+.z-index-5{
+	z-index: 5;
+}
+.has-bg{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.text-decoration-hover:hover{
+	text-decoration: underline;
+}
+.text-white-hover{
+	transition: color 0.2s;
+}
+.text-white-hover:hover{
+	color: #ffffff !important;
+}
+.default-title{
+	font-size: 30px;
+}
+.default-title.has-line{
+	position: relative;
+}
+.default-title.has-line::before{
+	position: absolute;
+	content: "";
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 3px;
+	width: 80px;
+	background: #264773;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+/*General style end*/
+
+header{
+	background: linear-gradient(to bottom, rgba(0,0,0, 0.5), transparent);
+	z-index: 5;
+}
+.menu-item{
+	position: relative;
+}
+
+.menu-item::before{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	background: #fff;
+	height: 1px;
+	transform: translateX(-50%);
+	transition: width 0.2s;
+}
+.menu-item:hover::before{
+	width: 100%;
+}
+
+.main-logo{
+	max-width: 130px;
+}
+
+.side-contact{
+	bottom: 30%;
+}
+.side-contact-item {
+    transform: translateX(150px);
+    transition: transform 0.3s;
+}
+.side-contact-item:hover{
+	transform: translateX(0);
+}
+.banner-item-text{
+	font-size: 4.1rem;
+}
+
+.slider-navigation{
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.slider-navigation > div{
+	pointer-events: visible;
+}
+.banner-carousel:hover .slider-navigation{
+	opacity: 1;
+}
+
+
+.gallery-item{
+	padding-top: 100%;
+}
+.gallery-subitem{
+	background: rgba(0,0,0, 0.5);
+	transition: opacity 0.3s;
+	opacity: 0;
+}
+
+.gallery-item:hover .gallery-subitem{
+	opacity: 1;
+}
+.auto-menu .auto-item{
+	position: relative;
+}
+.auto-menu .auto-item::before{
+	position: absolute;
+	content: "";
+	bottom: -3px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #264773;
+	opacity: 0;
+}
+.auto-menu .auto-item.active::before{
+	opacity: 1;
+}
+.auto-name,
+.auto-price{
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.footer-top{
+	background-color: #164D86;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+.footer-logo{
+	width: 150px;
+}
+.footer-social-item{
+	width: 50px;
+	height: 50px;
+	transition: background 0.2s;
+}
+.footer-social-item:hover{
+	background-color: rgba(255,255,255, 0.1);
+}
+.footer-bottom{
+	background-color: #113B68;
+}
+
+.back-top{
+	bottom: 20px;
+	right: 30px;
+	z-index: 3;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}
+
+.back-top.active{
+	opacity: 1;
+	pointer-events: visible;
+}
