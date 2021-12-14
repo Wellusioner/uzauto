@@ -152,6 +152,7 @@ body{
 }
 .default-title{
 	font-size: 30px;
+	font-weight: 700;
 }
 .default-title.has-line{
 	position: relative;
