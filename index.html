@@ -12,6 +12,7 @@
   <div id="homepage">
   
 		<!--  	Header start-->
+<!--
 			<header class="position-absolute w-100">
 				<div class="container">
 					<div class="header-wrapper py-2 d-flex align-items-center justify-content-between position-relative">
@@ -179,6 +180,7 @@
 					</div>
 				</div>
 			</header>
+-->
 		<!--  	Header end-->
 		<!--		Search start-->
 			<div class="search-content position-fixed start-0 w-100">
@@ -216,25 +218,25 @@
 			<div class="banner-carousel swiper">
 				<div class="swiper-wrapper">
 				<div class="swiper-slide">
-						<div class="banner-item has-bg min-vh-100 d-flex py-5" style="background-image: url('./images/tracker.jpg')">
+						<div class="banner-item has-bg d-flex py-5" style="background-image: url('./images/tracker.jpg')">
 							<div class="container align-self-end d-flex justify-content-between align-items-center">
 								<span class="banner-item-text text-white text-uppercase">
 									НОВЫЙ <br>
 									Chevrolet <br>
 									tracker 2021
 								</span>
-								<span><img width="300" src="./images/chevrolet.png" alt=""></span>
+								<span class="d-sm-block d-none"><img width="300" src="./images/chevrolet.png" alt=""></span>
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="banner-item has-bg min-vh-100 d-flex py-5" style="background-image: url('./images/equinox.jpg')">
+						<div class="banner-item has-bg d-flex py-5" style="background-image: url('./images/equinox.jpg')">
 							<div class="container align-self-end d-flex justify-content-between align-items-center">
 								<span class="banner-item-text text-white text-uppercase">
 									НОВЫЙ <br>
 									Equinox 2021
 								</span>
-								<span><img width="300" src="./images/chevrolet.png" alt=""></span>
+								<span class="d-sm-block d-none"><img width="300" src="./images/chevrolet.png" alt=""></span>
 							</div>
 						</div>
 					</div>
@@ -259,7 +261,7 @@
 					<a class="text-decoration-hover" href="#!">Новости</a>
 					<a class="text-decoration-hover" href="#!">Видео-обзоры</a>
 				</div>
-				<div class="gallery-group row pb-5">
+				<div class="gallery-group row gy-3 pb-5">
 					<div class="col-md-3">
 						<a href="#!" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery1.jpg')">
 							<span class="gallery-subitem d-flex align-items-center justify-content-center h-100 w-100 text-white position-absolute top-0 start-0">ПОДРОБНО <i class="fas fa-arrow-right ms-2"></i></span>
@@ -288,37 +290,37 @@
 			<div class="auto-gallery py-5">
 				<div class="container">
 					<div class="default-title text-center mb-5 has-line">МОДЕЛЬНЫЙ РЯД</div>
-					<ul class="auto-menu w-100 d-flex align-items-top justify-content-center pt-4 mb-5">
-						<li data-id="1" class="auto-item cursor-pointer mx-3 px-1 active" data-name="Tahoe" data-price="180 000" data-img="./images/chevrolet2.png">Tahoe</li>
-						<li data-id="2" class="auto-item cursor-pointer mx-3 px-1" data-name="Traverse" data-price="180 000" data-img="./images/chevrolet2.png">Traverse</li>
-						<li data-id="3" class="auto-item cursor-pointer mx-3 px-1" data-name="Trailblazer" data-price="180 000" data-img="./images/chevrolet2.png">Trailblazer</li>
-						<li data-id="4" class="auto-item cursor-pointer mx-3 px-1" data-name="Equinox" data-price="180 000" data-img="./images/chevrolet2.png">Equinox</li>
-						<li data-id="5" class="auto-item cursor-pointer mx-3 px-1" data-name="Malibu" data-price="180 000" data-img="./images/chevrolet2.png">Malibu</li>
-						<li data-id="6" class="auto-item cursor-pointer mx-3 px-1" data-name="Tracker" data-price="180 000" data-img="./images/chevrolet2.png">Tracker</li>
-						<li data-id="7" class="auto-item cursor-pointer mx-3 px-1" data-name="Lacetti" data-price="180 000" data-img="./images/chevrolet2.png">Lacetti</li>
-						<li data-id="8" class="auto-item cursor-pointer mx-3 px-1" data-name="Cobalt" data-price="180 000" data-img="./images/chevrolet2.png">Cobalt</li>
-						<li data-id="9" class="auto-item cursor-pointer mx-3 px-1" data-name="Nexia" data-price="180 000" data-img="./images/chevrolet2.png">Nexia</li>
-						<li data-id="10" class="auto-item cursor-pointer mx-3 px-1" data-name="Damas" data-price="180 000" data-img="./images/chevrolet2.png">Damas</li>
-						<li data-id="11" class="auto-item cursor-pointer mx-3 px-1" data-name="Labo" data-price="180 000" data-img="./images/chevrolet2.png">Labo</li>
+					<ul class="auto-menu w-100 d-flex flex-wrap align-items-top justify-content-center pt-4 mb-5">
+						<li data-id="1" class="auto-item cursor-pointer mb-3 mx-3 px-1 active" data-name="Tahoe" data-price="180 000" data-img="./images/chevrolet2.png">Tahoe</li>
+						<li data-id="2" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Traverse" data-price="180 000" data-img="./images/chevrolet2.png">Traverse</li>
+						<li data-id="3" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Trailblazer" data-price="180 000" data-img="./images/chevrolet2.png">Trailblazer</li>
+						<li data-id="4" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Equinox" data-price="180 000" data-img="./images/chevrolet2.png">Equinox</li>
+						<li data-id="5" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Malibu" data-price="180 000" data-img="./images/chevrolet2.png">Malibu</li>
+						<li data-id="6" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Tracker" data-price="180 000" data-img="./images/chevrolet2.png">Tracker</li>
+						<li data-id="7" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Lacetti" data-price="180 000" data-img="./images/chevrolet2.png">Lacetti</li>
+						<li data-id="8" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Cobalt" data-price="180 000" data-img="./images/chevrolet2.png">Cobalt</li>
+						<li data-id="9" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Nexia" data-price="180 000" data-img="./images/chevrolet2.png">Nexia</li>
+						<li data-id="10" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Damas" data-price="180 000" data-img="./images/chevrolet2.png">Damas</li>
+						<li data-id="11" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Labo" data-price="180 000" data-img="./images/chevrolet2.png">Labo</li>
 					</ul>
 				</div>
 				<div id="selected-auto" class="position-relative">
 					<div class="auto-behind has-bg w-100 position-absolute top-0 start-0" style="height: 220px; background-image: url('./images/inside.jpg')"></div>
 					<div class="container position-relative">
-						<div class="text-center position-relative" style="height: 500px">
-							<img data-auto-id="1" class="position-absolute selected-auto-img w-auto cursor-pointer active" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="2" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="3" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="4" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="5" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="6" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="7" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="8" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="9" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="10" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
-							<img data-auto-id="11" class="position-absolute selected-auto-img w-auto cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+						<div class="auto-img-wrapper text-center position-relative">
+							<img data-auto-id="1" class="position-absolute selected-auto-img w-100 cursor-pointer active" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="2" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="3" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="4" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="5" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="6" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="7" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="8" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="9" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="10" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="11" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
 						</div>
-						<div class="d-flex justify-content-evenly">
+						<div class="d-flex justify-content-sm-evenly justify-content-between">
 							<div class="auto-name text-uppercase" id="selected-auto-name">Chevrolet Tahoe</div>
 							<div class="auto-price">от <span id="selected-auto-price">180 000</span> сум</div>
 						</div>
@@ -330,13 +332,16 @@
 			<footer>
 					<div class="footer-top">
 						<div class="container">
-							<div class="row mb-5">
-								<div class="col-md-3">
-									<a class="d-inline-block footer-logo" href="#!">
+							<div class="row row-cols-sm-5 row-cols-1 mb-sm-5 mb-3 gx-5 gy-4">
+								<div>
+									<a class="d-inline-block footer-logo mb-4" href="#!">
 										<img class="d-block w-100" src="./images/logo.png" alt="">
 									</a>
+									<div class="text-white mb-4">Адрес: <br> 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
+									<div class="text-white mb-4">Call center: <br> <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
 								</div>
-								<div class="col-md-3">
+								<div>
+									<span class="d-block fs-1 text-white mb-4">О сервисе</span>
 									<ul>
 										<li class="mb-4"><a class="footer-item text-white" href="#!">КОМПАНИЯ</a></li>
 										<li class="mb-4"><a class="footer-item text-white" href="#!">АВТОМОБИЛИ</a></li>
@@ -345,43 +350,41 @@
 										<li class="mb-4"><a class="footer-item text-white" href="#!">ИНВЕСТОРОВ</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div>
+									<span class="d-block fs-1 text-white mb-4">Помощь</span>
 									<ul>
 										<li class="mb-4"><a class="footer-item text-white" href="#!">КОНКУРСЫ</a></li>
 										<li class="mb-4"><a class="footer-item text-white" href="#!">ПРЕСС-ЦЕНТР</a></li>
 										<li class="mb-4"><a class="footer-item text-white" href="#!">КОНТАКТЫ</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
-									<div class="text-white mb-4">Адрес: 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
-									<div class="text-white mb-4">Call center: <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
-									<div>
-										<span class="text-white">МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</span>
-										<div class="footer-social d-flex pt-3">
-											<a class="footer-social-item d-flex align-items-center justify-content-center me-4 text-white border border-white rounded-circle" href="#!"><i class="fab fa-telegram-plane fa-2x"></i></a>
-											<a class="footer-social-item d-flex align-items-center justify-content-center me-4 text-white border border-white rounded-circle" href="#!"><i class="fab fa-facebook-f fa-2x"></i></a>
-											<a class="footer-social-item d-flex align-items-center justify-content-center me-4 text-white border border-white rounded-circle" href="#!"><i class="fab fa-instagram fa-2x"></i></a>
-										</div>
-									</div>
+								<div >
+									<span class="d-block fs-1 text-white mb-4">Услуги</span>
+									<ul>
+										<li class="mb-4"><a class="footer-item text-white" href="#!">КОНКУРСЫ</a></li>
+										<li class="mb-4"><a class="footer-item text-white" href="#!">ПРЕСС-ЦЕНТР</a></li>
+										<li class="mb-4"><a class="footer-item text-white" href="#!">КОНТАКТЫ</a></li>
+									</ul>
+								</div>
+								<div>
+									<span class="d-block fs-1 text-white mb-4">UzAuto</span>
+									<div class="text-white mb-4">Доступно для владельцев iOS и Android смартфонов.</div>
+									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social1.svg" alt=""></a></div>
+									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social2.svg" alt=""></a></div>
+									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social3.svg" alt=""></a></div>
 								</div>
 							</div>
-							<p class="text-white">Гарантийный период: Гарантия распространяется на автомобили, реализованные через уполномоченных дилеров, 	 и составляет для эксплуатирующихся в нормальных условиях автомобилей 36 месяцев или 100000 км пробега со
-								дня приемки автомобиля Владельцем, в зависимости оттого, что наступит раньше. Гарантия распространяется на конкретный автомобиль и не связана с Владельцем персонально. При продаже автомобиля Продавец должен
-								передать Сервисную книжку новому Владельцу и проставить печать уполномоченного дилера с внесением данных нового Владельца в Сервисную книжку. В течение гарантийного периода новый владелец автомобиля имеет такие
-								же права на гарантию при условии выполнения всех требований производителя указанных в сервисной книжке.
-							</p>
 						</div>
 					</div>
-					<div class="footer-bottom py-5">
+					<div class="footer-bottom py-3">
 						<div class="container">
 							<div class="d-flex align-items-top justify-content-between">
-								<span class="text-white-50 mb-3">&copy; 1996-2021 AO &laquo;UZAUTO MOTORS&raquo; </span>
-								<div class="mb-3 text-white-50">При использовании материалов сайта необходимо указать ссылку</div>
-								<div class="mb-3 d-flex align-items-top">
-									<a class="text-white-50 text-white-hover me-3" href="#!">Символика Узбекистана</a>
-									<a class="text-white-50 text-white-hover me-3" href="#!">Полезные ссылки</a>
-									<a class="text-white-50" href="#!"><img width="100" src="./images/counter.jpg" alt=""></a>
+								<div class="footer-social d-flex">
+									<a class="d-flex align-items-center justify-content-center me-4 text-white" href="#!"><i class="fab fa-telegram-plane me-2"></i> telegram</a>
+									<a class="d-flex align-items-center justify-content-center me-4 text-white" href="#!"><i class="fab fa-facebook-f me-2"></i> facebook</a>
+									<a class="d-flex align-items-center justify-content-center me-4 text-white" href="#!"><i class="fab fa-instagram me-2"></i> instagram</a>
 								</div>
+								<span class="text-white">&copy; 1996-2021 AO &laquo;UZAUTO MOTORS&raquo; </span>
 							</div>
 						</div>
 					</div>
@@ -389,7 +392,7 @@
 		<!--		Footer end-->
 <!--		BackToTop button-->
  	<div class="back-top d-flex align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
- 		<i class="fas fa-angle-up fa-2x "></i>
+ 		<i class="fas fa-angle-up "></i>
  	</div>
   </div>
   
