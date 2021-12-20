@@ -336,9 +336,7 @@ header{
     transform: translateX(150px);
     transition: transform 0.3s;
 }
-.side-contact-item:hover{
-	transform: translateX(0);
-}
+
 
 .banner-item{
 	height: 100vh;
@@ -391,8 +389,7 @@ header{
 	opacity: 0;
 	transition: opacity 0.3s;
 }
-.auto-menu .auto-item.active::before,
-.auto-menu .auto-item:hover::before{
+.auto-menu .auto-item.active::before{	
 	opacity: 1;
 }
 .auto-name,
@@ -420,10 +417,10 @@ header{
 	transform: translateX(150vw);
 	transition: transform 0.5s;
 }
-.selected-auto-img:hover{
-	transform: translateX(-50%) scale(1.05);
-}
 
+.auto-behind{
+	height: 200px;
+}
 .auto-behind::before{
 	position: absolute;
 	content: "";
@@ -448,9 +445,7 @@ header{
 	height: 50px;
 	transition: background 0.2s;
 }
-.footer-social-item:hover{
-	background-color: rgba(255,255,255, 0.1);
-}
+
 .footer-bottom{
 	background-color: #113B68;
 }
@@ -489,12 +484,16 @@ header{
 	}
 
 	/*Auto menu start*/
+	
+	.auto-behind{
+		height: 120px;
+	}
 	.auto-name,
 	.auto-price{
 		font-size: 20px;
 	}
 	.auto-img-wrapper{
-		height: 280px;
+		height: 250px;
 	}
 
 	/*AUto menu end*/
@@ -502,8 +501,27 @@ header{
 	.footer-top{
 		padding-top: 50px;
 	}
+	.footer-item {
+		font-size: 14px;
+	}
 	.back-top{
 		bottom: 10px;
 		right: 15px;
+	}
+}
+
+//For animation on large screen
+@media screen and (min-width: 769px){
+	.side-contact-item:hover{
+		transform: translateX(0);
+	}
+	.auto-menu .auto-item:hover::before{
+		opacity: 1;
+	}
+	.selected-auto-img:hover{
+		transform: translateX(-50%) scale(1.05);
+	}
+	.footer-social-item:hover{
+		background-color: rgba(255,255,255, 0.1);
 	}
 }
