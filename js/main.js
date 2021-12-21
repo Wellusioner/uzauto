@@ -8,6 +8,18 @@ const searchToggler = document.querySelectorAll(".search-toggle");
 const backTop = document.querySelector(".back-top");
 const autoMenuList = document.querySelectorAll(".auto-menu .auto-item");
 
+const hamburger = document.querySelector("#hamburger");
+const mask = document.querySelector("#bg-mask");
+const header = document.querySelector(".header");
+const closeHeaderBtn = document.querySelector(".header-wrapper .close-header");
+
+[hamburger, closeHeaderBtn, mask].forEach(function(item){
+	item.addEventListener("click", function(){
+		html.classList.toggle("overflowed");
+		header.classList.toggle("open");
+	});
+});
+
 menuList.forEach(function(item){
 	item.addEventListener("click", function(e){
 		if(item.classList.contains("active")){

@@ -15,63 +15,6 @@
     font-style: normal;
 }
 
-/*
-@font-face {
-    font-family: 'Louis';
-    src: url('../fonts/louis-italic.eot');
-    src: url('../fonts/louis-italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/louis-italic.woff2') format('woff2'),
-         url('../fonts/louis-italic.woff') format('woff'),
-         url('../fonts/louis-italic.ttf') format('truetype'),
-         url('../fonts/louis-italic.svg#louisitalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-*/
-
-/*
-@font-face {
-    font-family: 'Louis';
-    src: url('../fonts/louis-condenseddemi.eot');
-    src: url('../fonts/louis-condenseddemi.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/louis-condenseddemi.woff2') format('woff2'),
-         url('../fonts/louis-condenseddemi.woff') format('woff'),
-         url('../fonts/louis-condenseddemi.ttf') format('truetype'),
-         url('../fonts/louis-condenseddemi.svg#louiscondensed_demi') format('svg');
-    font-weight: 600;
-    font-style: normal;
-}
-*/
-
-/*
-@font-face {
-    font-family: 'Louis';
-    src: url('../fonts/louis-cendence.eot');
-    src: url('../fonts/louis-cendence.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/louis-cendence.woff2') format('woff2'),
-         url('../fonts/louis-cendence.woff') format('woff'),
-         url('../fonts/louis-cendence.ttf') format('truetype'),
-         url('../fonts/louis-cendence.svg#louiscondensed_regular') format('svg');
-    font-weight: 500;
-    font-style: normal;
-
-}
-*/
-
-/*
-@font-face {
-    font-family: 'Louis';
-    src: url('../fonts/louis-bold-italic.eot');
-    src: url('../fonts/louis-bold-italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/louis-bold-italic.woff2') format('woff2'),
-         url('../fonts/louis-bold-italic.woff') format('woff'),
-         url('../fonts/louis-bold-italic.ttf') format('truetype'),
-         url('../fonts/louis-bold-italic.svg#louisbold_italic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-*/
-
 @font-face {
     font-family: 'LouisBold';
     src: url('../fonts/louis-bold.eot');
@@ -183,6 +126,9 @@ header{
 	background: linear-gradient(to bottom, rgba(0,0,0, 0.5), transparent);
 	z-index: 5;
 }
+.header-wrapper{
+	position: relative;
+}
 .menu-item{
 	position: relative;
 }
@@ -198,12 +144,10 @@ header{
 	transform: translateX(-50%);
 	transition: width 0.2s;
 }
-.menu-item:hover::before{
-	width: 100%;
-}
 
 .main-logo{
 	max-width: 130px;
+	min-width: 130px;
 }
 
 .has-submenu.active{
@@ -249,6 +193,9 @@ header{
 	background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0, 0.5));
 }
 
+.about-company-bg{
+	min-height: 70vh;
+}
 .about-company-bg:before{
 	position: absolute;
 	content: "";
@@ -330,13 +277,15 @@ header{
 /*Search end*/
 
 .side-contact{
+	right: -150px;
 	bottom: 30%;
 }
 .side-contact-item {
-    transform: translateX(150px);
     transition: transform 0.3s;
 }
-
+.side-contact-item:hover{
+		transform: translateX(-150px);
+	}
 
 .banner-item{
 	height: 100vh;
@@ -432,6 +381,23 @@ header{
 }
 /*AUto menu end*/
 
+/*Auto tab menu start*/
+.auto-tab-item{
+	font-size: 20px;
+}
+.auto-exterier{
+	padding-top: 50%;
+}
+.auto-interier{
+	padding-top: 30%;
+	min-height: 300px;
+}
+.auto-technology{
+	padding-top: 30%;
+	min-height: 250px;
+}
+/*Auto tab menu end*/
+
 .footer-top{
 	background-color: #164D86;
 	padding-top: 70px;
@@ -466,11 +432,104 @@ header{
 	pointer-events: visible;
 }
 
+/*For Header mobile start*/
+@media (max-width: 1199px){
+	.header-wrapper{
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		background-color: #264773;
+		min-width: 320px;
+		padding: 30px 15px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		box-sizing: border-box;
+		transform: translateX(-350px);
+		transition: transform 0.3s;
+		z-index: 2;
+	}
+	.header.open .header-wrapper{
+		transform: translateX(0);
+	}
+	.header-wrapper .has-submenu{
+		position: relative;
+	}
+	.has-submenu .submenu{
+		z-index: 1;
+	}
+	.has-submenu .submenu a{
+		text-align: left !important;
+	}
+	.bg-mask{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0, 0.7);
+		height: 100vh;
+		width: 100vw;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.3s;
+	}
+	.header.open .bg-mask{
+		opacity: 1;
+		pointer-events: visible;
+	}
+	.close-header{
+		font-size: 18px;
+	}
+	
+}
+/*For Header mobile end*/
 
+@media (max-width: 1399px) and (min-width: 1200px) {
+	.banner-item{
+		height: 70vh;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+	.banner-item{
+		height: 60vh;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.banner-item{
+		height: 40vh;
+	}
+	.banner-item-text{
+		font-size: 3rem;
+		line-height: 30px;
+	}
+	.auto-img-wrapper{
+		height: 370px;
+	}
+}
+@media (max-width: 767px) and (min-width: 576px){
+	.banner-item{
+		height: 40vh;
+	}
 
+	.banner-item-text{
+		font-size: 2rem;
+		line-height: 20px;
+	}
+	.about-company-bg{
+		min-height: 50vh;
+	}
+	.gallery-item{
+		padding-top: 70%;
+	}
+	
+	.auto-img-wrapper{
+		height: 300px;
+	}
+	.auto-tab-item{
+		font-size: 12px;
+	}
+}
 
-
-@media screen and (max-width: 575px){
+@media (max-width: 575px){
 	
 	.banner-item{
 		height: 40vh;
@@ -481,6 +540,9 @@ header{
 	}
 	.gallery-item{
 		padding-top: 70%;
+	}
+	.about-company-bg{
+		min-height: 50vh;
 	}
 
 	/*Auto menu start*/
@@ -497,6 +559,9 @@ header{
 	}
 
 	/*AUto menu end*/
+	.auto-tab-item{
+		font-size: 12px;
+	}
 
 	.footer-top{
 		padding-top: 50px;
@@ -512,9 +577,10 @@ header{
 
 //For animation on large screen
 @media screen and (min-width: 769px){
-	.side-contact-item:hover{
-		transform: translateX(0);
+	.menu-item:hover::before{
+		width: 100%;
 	}
+	
 	.auto-menu .auto-item:hover::before{
 		opacity: 1;
 	}

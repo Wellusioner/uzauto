@@ -12,15 +12,29 @@
   <div id="homepage">
   
 		<!--  	Header start-->
-			<header class="position-absolute w-100">
+<header class="header position-absolute w-100">
 				<div class="container">
-					<div class="header-wrapper py-2 d-flex align-items-center justify-content-between position-relative">
-						<ul class="menu-group d-flex align-items-center justify-content-between flex-fill">
+					<div class="d-xl-none d-flex align-items-center justify-content-between py-2">
+						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
+							<img width="120" src="./images/logo.png" alt="UzAuto">
+						</a>
+						<span class="search-toggle cursor-pointer text-white">
+							<i class="fas fa-search fa-2x"></i>
+						</span>
+						<span id="hamburger" class="text-white cursor-pointer">
+							<i class="fas fa-sliders-h fa-2x"></i>
+						</span>
+					</div>
+					<div class="header-wrapper py-xl-2 d-xl-flex align-items-center justify-content-between">
+						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
+							<img width="150" src="./images/logo.png" alt="UzAuto">
+						</a>
+						<ul class="menu-group d-xl-flex align-items-center justify-content-between flex-fill">
 							<li class="has-submenu">
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">КОМПАНИЯ <i class="fa fa-angle-down"></i></a>
-								<div class="submenu d-flex position-absolute bg-white w-100 p-5 start-0 shadow-sm">
+								<div class="submenu d-flex position-absolute bg-white w-100 p-5 start-0">
 									<div class="pe-md-5">
-										<div class="fw-bold mb-3 fst-italic">КОМПАНИЯ</div>
+										<div class="d-xl-block d-none fw-bold mb-3 fst-italic">КОМПАНИЯ</div>
 										<ul class="pe-md-5">
 											<li class="sub-company-item mb-md-4 mb-3"><a class="text-uppercase text-black" href="#!"><span class="d-inline-block"><i class="fa fa-angle-right me-2"></i></span> РУКОВОДСТВО</a></li>
 											<li class="sub-company-item mb-md-4 mb-3"><a class="text-uppercase text-black" href="#!"><span class="d-inline-block"><i class="fa fa-angle-right me-2"></i></span> КОРПОРАТИВНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
@@ -32,7 +46,7 @@
 											<li class="sub-company-item mb-md-4 mb-3"><a class="text-uppercase text-black" href="#!"><span class="d-inline-block"><i class="fa fa-angle-right me-2"></i></span> О КОМПАНИИ</a></li>
 										</ul>
 									</div>
-									<div class="company-bg-img position-relative d-flex align-items-end border border-secondary border-2 p-4 has-bg flex-fill" style="background-image: url('./images/factory.jpg')">
+									<div class="company-bg-img position-relative d-xl-flex d-none align-items-end border border-secondary border-2 p-4 has-bg flex-fill" style="background-image: url('./images/factory.jpg')">
 										<div class="text-white position-relative">
 											<p class="mb-2 fst-italic">Акционерное общество «UZAUTO MOTORS»</p>
 											<p class="mb-2 fst-italic">Общая площадь – 72 га.</p>
@@ -45,91 +59,91 @@
 							</li>
 							<li class="has-submenu">
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">АВТОМОБИЛИ <i class="fa fa-angle-down"></i></a>
-								<div class="submenu position-absolute bg-white w-100 p-5 start-0 shadow-sm">
-									<div class="fw-bold mb-3 fst-italic">АВТОМОБИЛИ</div>
+								<div class="submenu position-absolute bg-white w-100 p-5 start-0">
+									<div class="d-xl-block d-none fw-bold mb-3 fst-italic">АВТОМОБИЛИ</div>
 									<div class="row gy-3">
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
-										<div class="col-md-3">
+										<div class="col-xl-3">
 											<a href="#!" class="d-block text-center">
-												<img class="d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
-												<div class="text-center text-dark fw-500">CHEVROLET TAHOE</div>
-												<div class="text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
+												<img class="d-xl-block d-none d-block mw-100 w-100" src="./images/malibu.jpg" alt="">
+												<div class="text-dark fw-500">CHEVROLET TAHOE</div>
+												<div class="d-xl-block d-none text-center text-dark fst-italic">ОТ 795 000 000 сум</div>
 											</a>
 										</div>
 									</div>
@@ -142,10 +156,10 @@
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">ВЛАДЕЛЬЦАМ</a>
 							</li>
 						</ul>
-						<a class="main-logo mx-5" href="#!">
+						<a class="d-xl-block d-none main-logo mx-5" href="#!">
 							<img class="d-block w-100" src="./images/logo.png" alt="UzAuto">
 						</a>
-						<ul class="d-flex align-items-center justify-content-between flex-fill">
+						<ul class="d-xl-flex align-items-center justify-content-between flex-fill">
 							<li>
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">ДЛЯ ИНВЕСТОРОВ</a>
 							</li>
@@ -159,9 +173,13 @@
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">КОНТАКТЫ</a>
 							</li>
 						</ul>
+						<span class="close-header d-xl-none d-inline-block position-absolute top-0 end-0 cursor-pointer text-white px-3 py-2">
+							<i class="fas fa-times"></i>
+						</span>
 					</div>
+					<div id="bg-mask" class="d-xl-none bg-mask"></div>
 				</div>
-				<div class="header-bottom pt-2">
+				<div class="d-xl-block d-none header-bottom pt-2">
 					<div class="container">
 						<div class="d-flex justify-content-end align-items-center">
 							<span class="search-toggle text-white cursor-pointer">
@@ -195,7 +213,7 @@
 		<!--		Search end-->
 		
 		<!--		Contact items start-->
-			<div class="side-contact position-fixed end-0 z-index-2">
+			<div class="side-contact position-fixed z-index-2">
 				<a class="side-contact-item d-block bg-blue text-white p-3 side-phone" href="#!">
 					<i class="fas fa-phone me-3"></i>
 					+998 99-777-77-77
@@ -212,7 +230,7 @@
 		<!--		Contact items end-->
 		
 		<div class="">
-			<div class="about-company-bg position-relative d-flex align-items-end py-5 has-bg" style="background-image: url('./images/cars.jpg');min-height: 80vh;">
+			<div class="about-company-bg position-relative d-flex align-items-end py-5 has-bg" style="background-image: url('./images/cars.jpg');">
 				<div class="container">
 					<div class="text-white position-relative">
 					<p class="mb-2 fst-italic display-3">Комплаенс – в переводе с английского</p>
@@ -261,58 +279,59 @@
 			<footer>
 					<div class="footer-top">
 						<div class="container">
-							<div class="row mb-5">
-								<div class="col-md-3">
-									<a class="d-inline-block footer-logo" href="#!">
+							<div class="row row-cols-xl-5 row-cols-md-2 row-cols-1 mb-sm-5 mb-3 gx-5 gy-4">
+								<div>
+									<a class="d-inline-block footer-logo mb-4" href="#!">
 										<img class="d-block w-100" src="./images/logo.png" alt="">
 									</a>
+									<div class="text-white mb-4">Адрес: <br> 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
+									<div class="text-white mb-4">Call center: <br> <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
 								</div>
-								<div class="col-md-3">
+								<div>
+									<span class="d-block fs-1 text-white mb-4">О сервисе</span>
 									<ul>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">КОМПАНИЯ</a></li>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">АВТОМОБИЛИ</a></li>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">ПОКУПАТЕЛЯМ</a></li>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">ВЛАДЕЛЬЦАМ</a></li>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">ИНВЕСТОРОВ</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Компания</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Автомобили</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Покупателям</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Владельцам</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Инвесторов</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
+								<div>
+									<span class="d-block fs-1 text-white mb-4">Помощь</span>
 									<ul>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">КОНКУРСЫ</a></li>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">ПРЕСС-ЦЕНТР</a></li>
-										<li class="mb-4"><a class="footer-item text-white" href="#!">КОНТАКТЫ</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Пресс-центр</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div class="col-md-3">
-									<div class="text-white mb-4">Адрес: 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
-									<div class="text-white mb-4">Call center: <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
-									<div>
-										<span class="text-white">МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</span>
-										<div class="footer-social d-flex pt-3">
-											<a class="footer-social-item d-flex align-items-center justify-content-center me-4 text-white border border-white rounded-circle" href="#!"><i class="fab fa-telegram-plane fa-2x"></i></a>
-											<a class="footer-social-item d-flex align-items-center justify-content-center me-4 text-white border border-white rounded-circle" href="#!"><i class="fab fa-facebook-f fa-2x"></i></a>
-											<a class="footer-social-item d-flex align-items-center justify-content-center me-4 text-white border border-white rounded-circle" href="#!"><i class="fab fa-instagram fa-2x"></i></a>
-										</div>
-									</div>
+								<div >
+									<span class="d-block fs-1 text-white mb-4">Услуги</span>
+									<ul>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Пресс-центр</a></li>
+										<li class="mb-3"><a class="footer-item text-white" href="#!">Контакты</a></li>
+									</ul>
+								</div>
+								<div>
+									<span class="d-block fs-1 text-white mb-4">UzAuto</span>
+									<div class="text-white mb-4">Доступно для владельцев iOS и Android смартфонов.</div>
+									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social1.svg" alt=""></a></div>
+									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social2.svg" alt=""></a></div>
+									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social3.svg" alt=""></a></div>
 								</div>
 							</div>
-							<p class="text-white">Гарантийный период: Гарантия распространяется на автомобили, реализованные через уполномоченных дилеров, 	 и составляет для эксплуатирующихся в нормальных условиях автомобилей 36 месяцев или 100000 км пробега со
-								дня приемки автомобиля Владельцем, в зависимости оттого, что наступит раньше. Гарантия распространяется на конкретный автомобиль и не связана с Владельцем персонально. При продаже автомобиля Продавец должен
-								передать Сервисную книжку новому Владельцу и проставить печать уполномоченного дилера с внесением данных нового Владельца в Сервисную книжку. В течение гарантийного периода новый владелец автомобиля имеет такие
-								же права на гарантию при условии выполнения всех требований производителя указанных в сервисной книжке.
-							</p>
 						</div>
 					</div>
-					<div class="footer-bottom py-5">
+					<div class="footer-bottom py-3">
 						<div class="container">
-							<div class="d-flex align-items-top justify-content-between">
-								<span class="text-white-50 mb-3">&copy; 1996-2021 AO &laquo;UZAUTO MOTORS&raquo; </span>
-								<div class="mb-3 text-white-50">При использовании материалов сайта необходимо указать ссылку</div>
-								<div class="mb-3 d-flex align-items-top">
-									<a class="text-white-50 text-white-hover me-3" href="#!">Символика Узбекистана</a>
-									<a class="text-white-50 text-white-hover me-3" href="#!">Полезные ссылки</a>
-									<a class="text-white-50" href="#!"><img width="100" src="./images/counter.jpg" alt=""></a>
+							<div class="row gy-3 row-cols-md-2 row-cols-1 align-items-top justify-content-between">
+								<div class="footer-social d-flex">
+									<a class="d-flex align-items-center justify-content-center me-4 text-white" href="#!"><i class="fab fa-telegram-plane me-2"></i> telegram</a>
+									<a class="d-flex align-items-center justify-content-center me-4 text-white" href="#!"><i class="fab fa-facebook-f me-2"></i> facebook</a>
+									<a class="d-flex align-items-center justify-content-center me-4 text-white" href="#!"><i class="fab fa-instagram me-2"></i> instagram</a>
 								</div>
+								<div class="text-md-end text-white">&copy; 1996-2021 AO &laquo;UZAUTO MOTORS&raquo; </div>
 							</div>
 						</div>
 					</div>
@@ -320,7 +339,7 @@
 		<!--		Footer end-->
 <!--		BackToTop button-->
  	<div class="back-top d-flex align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
- 		<i class="fas fa-angle-up fa-2x "></i>
+ 		<i class="fas fa-angle-up"></i>
  	</div>
   </div>
   
