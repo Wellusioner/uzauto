@@ -394,7 +394,7 @@ header{
 }
 .auto-technology{
 	padding-top: 30%;
-	min-height: 250px;
+	min-height: 200px;
 }
 /*Auto tab menu end*/
 
@@ -484,9 +484,13 @@ header{
 /*For Header mobile end*/
 
 @media (max-width: 1399px) and (min-width: 1200px) {
+	.menu-group .menu-item{
+		font-size: 14px;
+	}
 	.banner-item{
 		height: 70vh;
 	}
+	
 }
 @media (max-width: 1199px) and (min-width: 992px) {
 	.banner-item{
@@ -538,9 +542,11 @@ header{
 		font-size: 2rem;
 		line-height: 20px;
 	}
+/*
 	.gallery-item{
 		padding-top: 70%;
 	}
+*/
 	.about-company-bg{
 		min-height: 50vh;
 	}
