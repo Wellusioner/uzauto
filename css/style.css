@@ -284,11 +284,12 @@ header{
     transition: transform 0.3s;
 }
 .side-contact-item:hover{
-		transform: translateX(-150px);
-	}
+	transform: translateX(-150px);
+}
 
 .banner-item{
 	height: 100vh;
+	min-height: 300px;
 }
 .banner-item-text{
 	font-size: 4.1rem;
