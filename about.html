@@ -15,12 +15,13 @@
 <header class="header position-absolute w-100">
 				<div class="container">
 					<div class="d-xl-none d-flex align-items-center justify-content-between py-2">
+					<span class="search-toggle cursor-pointer text-white fs-2">
+							<i class="fas fa-search"></i>
+						</span>
 						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
 							<img width="120" src="./images/logo.png" alt="UzAuto">
 						</a>
-						<span class="search-toggle cursor-pointer text-white fs-2">
-							<i class="fas fa-search"></i>
-						</span>
+						
 						<span id="hamburger" class="text-white cursor-pointer fs-2">
 							<i class="fas fa-sliders-h"></i>
 						</span>
@@ -198,6 +199,18 @@
 				</div>
 			</header>
 		<!--  	Header end-->
+		<!--		Mobile Feed start-->
+
+			<div class="d-md-none mobile-feed row row-cols-5 g-0 w-100 position-fixed bottom-0 start-0 bg-white z-index-1">
+				<a class="feed-item border-bottom border-3 border-primary text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-home"></i> <br> Bosh sahifa</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-car-alt"></i> <br> Avtobomillar</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-newspaper"></i> <br> Yangiliklar</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-photo-video"></i> <br> Media</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-tag"></i> <br> Narxlar</a>
+			</div>
+
+		<!--		Mobile Feed end-->
+		
 		<!--		Search start-->
 			<div class="search-content position-fixed start-0 w-100">
 				<div class="container">
@@ -232,54 +245,65 @@
 		<div class="">
 			<div class="about-company-bg position-relative d-flex align-items-end py-5 has-bg" style="background-image: url('./images/factory.jpg');">
 				<div class="container">
-					<div class="text-white position-relative pt-5">
-					<p class="mb-2 fst-italic fs-1">Акционерное общество «UZAUTO MOTORS»</p>
-					<p class="mb-2 fst-italic fs-2">Общая площадь – 72 га.</p>
-					<p class="mb-2 fst-italic fs-2">Производственных площадей – 192 тыс. кв.м.</p>
-					<p class="mb-2 fst-italic fs-2">Находится в городе Асака,</p>
-					<p class="mb-2 fst-italic fs-2">Андижанская область.</p>
-				</div>
+					<div data-aos="fade-up" class="text-white position-relative pt-5">
+						<p class="mb-2 fst-italic fs-1">Акционерное общество «UZAUTO MOTORS»</p>
+						<p class="mb-2 fst-italic fs-2">Общая площадь – 72 га.</p>
+						<p class="mb-2 fst-italic fs-2">Производственных площадей – 192 тыс. кв.м.</p>
+						<p class="mb-2 fst-italic fs-2">Находится в городе Асака,</p>
+						<p class="mb-2 fst-italic fs-2">Андижанская область.</p>
+					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="py-5 text-dark">
-					<div class="mb-5">
-						<h1 class="default-title text-dark text-uppercase  border-bottom border-3 border-dark pb-3">О компании</h1>
+					<div class="d-flex flex-wrap align-items-start justify-content-xl-between justify-content-center mb-5">
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="50" href="#!">РУКОВОДСТВО </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="100" href="#!">КОРПОРАТИВНАЯ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="150" href="#!">ДЕЯТЕЛЬНОСТЬ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="200" href="#!">НОРМАТИВНО-ПРАВОВЫЕ АКТЫ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="250" href="#!">ИСТОРИЯ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="300" href="#!">РАЗВИТИЯ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="350" href="#!">СЕРТИФИКАТЫ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="400" href="#!">КАЧЕСТВА </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="450" href="#!">КОМПЛАЕНС </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark pb-2 fs-5" data-aos="fade-left" data-aos-delay="500" href="#!">ВАКАНСИИ </a>
+						<a class="d-inline-block text-uppercase mx-1 px-1 text-dark text-uppercase fs-5  border-bottom border-3 border-dark pb-2" href="#!" data-aos="fade-left" data-aos-delay="550">О компании</a>
 					</div>
-					<div class="mb-4">
+					<div class="border p-5">
+						<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">НАИМЕНОВАНИЕ КОМПАНИИ</div>
 						<p class="">Акционерное Общество «UZAUTO MOTORS»</p>
 					</div>
-					<div class="mb-4">
+					<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">ЗАВОД:</div>
 						<div>Общая площадь – 72 га. Производственных площадей – 192 тыс. кв. м.</div>
 						<div>Находится в городе Асака, Андижанская область (Ферганская долина).</div>
 					</div>
-					<div class="mb-4">
+					<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">ФИЛИАЛЫ:</div>
 						<div>г. Ташкент, г. Питнак Хорезмская обл.</div>
 					</div>
-					<div class="mb-4">
+					<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">ПРОИЗВОДСТВЕННАЯ МОЩНОСТЬ:</div>
 						<div>АО «UZAUTO MOTORS» г. Асака 300 тыс.а/м.</div>
 						<div>Филиал АО «UZAUTO MOTORS» г. Питнак - 60 тыс. автомобилей;</div>
 						<div>Филиал АО «UZAUTO MOTORS» г. Ташкенте – 10 тыс. а/м;</div>
 					</div>
-					<div class="mb-4">
+					<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">ПРОДУКТЫ:</div>
 						<p>В настоящее время на 3-х производственных площадках АО «UZAUTO MOTORS» производятся 10 моделей автомобилей под
 							брендами «Шевроле» (Chevrolet) и «Равон» (Ravon), в частности модели Matiz, Spark (R2), Nexia (R3), Cobalt (R4), Lacetti
 							(Gentra) выпускаются на основном производстве в г.Асаке, модели Tracker, Malibu в филиале в г. Ташкенте, модели Damas,
 							Labo в филиале в г.Питнаке.</p>
 					</div>
-					<div class="mb-4">
+					<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">ПОСТАВЩИКИ UZAUTO MOTORS:</div>
 						<p>Более 100, включая субпоставщиков. Основные — «GM Powertrain Uzbekistan», «Uz SeMyung», «Uz Koram»,«Uz Koje»
 						«Avtokomponent», «Uz Dong Yang», «Uz Hanwoo», «Uz Dong Won Ko», «Uz Dong Ju Paint», «Uz Tong Hong Ko», «Uz Chasis»,«Uz
 						Sangwoo», «O`zAuto Austem», «Uz Minda», «Jizzax Akkumulyator Zavodi», «Uzeraealternator», «Uzerae Climate Control»,
 						«Uzeraeacable», «Uz Hanwoo Engineering», «Kwangin Autosystems», «Avtooyna»</p>
 					</div>
-					<div class="mb-4">
+					<div data-aos="fade-up" class="mb-4">
 						<div class="fw-bold">ПЕРСОНАЛ:</div>
 						<div>Численность персонала АО «UZAUTO MOTORS» на 1 Апреля 2020г. составляет более 10 000 человек.
 						«ЦЕЛЬЮ ДЕЯТЕЛЬНОСТИ КОМПАНИИ ЯВЛЯЕТСЯ ПОЛУЧЕНИЕ ПРИБЫЛИ ЗА СЧЕТ ПРОИЗВОДСТВА, СБОРКИ И ПРОДАЖИ
@@ -292,6 +316,7 @@
 						<div>- выдача займа, в том числе получение займа от третьих лиц и государственных органов;</div>
 						<div>- осуществление другой любой деятельности для достижения вышеуказанных целей, разрешённых законодательством.</div>
 					</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -300,15 +325,15 @@
 			<footer>
 					<div class="footer-top">
 						<div class="container">
-							<div class="row row-cols-xl-5 row-cols-md-2 row-cols-1 mb-sm-5 mb-3 gx-5 gy-4">
-								<div>
+							<div class="row justify-content-xl-center mb-sm-5 mb-3 gx-5 gy-4">
+								<div class="col-xl-3 col-lg-4 col-6" data-aos="fade-up">
 									<a class="d-inline-block footer-logo mb-3" href="#!">
 										<img class="d-block w-100" src="./images/logo.png" alt="">
 									</a>
 									<div class="text-white mb-4">Адрес: <br> 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
 									<div class="text-white mb-4">Call center: <br> <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="50">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">О сервисе</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Компания</a></li>
@@ -318,7 +343,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Инвесторов</a></li>
 									</ul>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="100">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">Помощь</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
@@ -326,7 +351,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div >
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="150">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">Услуги</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
@@ -334,7 +359,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="200">
 									<span class="d-block fs-1 text-white mb-2">UzAuto</span>
 									<div class="text-white mb-4">Доступно для владельцев iOS и Android смартфонов.</div>
 									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social1.svg" alt=""></a></div>
@@ -359,12 +384,13 @@
 			</footer>
 		<!--		Footer end-->
 <!--		BackToTop button-->
- 	<div class="back-top d-flex align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
+ 	<div class="back-top d-md-flex d-none align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
  		<i class="fas fa-angle-up "></i>
  	</div>
   </div>
   
 	<script src="./js/swiper.min.js"></script>
+	<script src="./js/aos.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>

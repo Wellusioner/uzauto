@@ -15,12 +15,13 @@
 <header class="header position-absolute w-100">
 				<div class="container">
 					<div class="d-xl-none d-flex align-items-center justify-content-between py-2">
-						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
-							<img width="120" src="./images/logo.png" alt="UzAuto">
-						</a>
 						<span class="search-toggle cursor-pointer text-white fs-2">
 							<i class="fas fa-search"></i>
 						</span>
+						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
+							<img width="120" src="./images/logo.png" alt="UzAuto">
+						</a>
+						
 						<span id="hamburger" class="text-white cursor-pointer fs-2">
 							<i class="fas fa-sliders-h"></i>
 						</span>
@@ -198,6 +199,17 @@
 				</div>
 			</header>
 		<!--  	Header end-->
+				<!--		Mobile Feed start-->
+
+			<div class="d-md-none mobile-feed row row-cols-5 g-0 w-100 position-fixed bottom-0 start-0 bg-white z-index-1">
+				<a class="feed-item border-bottom border-3 border-primary text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-home"></i> <br> Bosh sahifa</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-car-alt"></i> <br> Avtobomillar</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-newspaper"></i> <br> Yangiliklar</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-photo-video"></i> <br> Media</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-tag"></i> <br> Narxlar</a>
+			</div>
+
+		<!--		Mobile Feed end-->
 		<!--		Search start-->
 			<div class="search-content position-fixed start-0 w-100">
 				<div class="container">
@@ -233,7 +245,7 @@
 			<div class="about-company-bg position-relative d-flex align-items-end py-5 has-bg" style="background-image: url('./images/tahoe33.jpg');">
 				<div class="container">
 					<div class="text-white position-relative pt-5">
-						<p class="mb-2 display-sm-1 display-4 text-uppercase fw-bold text-center">Chevrolet Tahoe</p>
+						<p data-aos="zoom-in" class="mb-2 display-sm-1 display-4 text-uppercase fw-bold text-center">Chevrolet Tahoe</p>
 					</div>
 				</div>
 			</div>
@@ -241,25 +253,25 @@
 				<div class="py-5 text-dark">
 					<div class="mb-5">
 						<ul class="d-flex justify-content-center">
-							<li><a class="auto-tab-item d-block text-dark text-center fw-bold text-uppercase p-3 border-bottom border-3 border-dark" href="auto-view.html">Chevrolet tahoe</a></li>
-							<li><a class="auto-tab-item d-block text-dark text-center fw-bold text-uppercase p-3" href="auto-character.html">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
-							<li><a class="auto-tab-item d-block text-dark text-center fw-bold text-uppercase p-3" href="auto-modification.html">МОДИФИКАЦИИ</a></li>
+							<li data-aos="fade-up" data-aos-delay="50"><a class="auto-tab-item d-block text-dark text-center fw-bold text-uppercase p-3 border-bottom border-3 border-dark" href="auto-view.html">Chevrolet tahoe</a></li>
+							<li data-aos="fade-up" data-aos-delay="100"><a class="auto-tab-item d-block text-dark text-center fw-bold text-uppercase p-3" href="auto-character.html">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</a></li>
+							<li data-aos="fade-up" data-aos-delay="150"><a class="auto-tab-item d-block text-dark text-center fw-bold text-uppercase p-3" href="auto-modification.html">МОДИФИКАЦИИ</a></li>
 						</ul>
 					</div>
 					
 					<div class="">
-						<p class="fst-italic mb-5">Сохранив лучшие черты своих предшественников, Chevrolet Tahoe четвертого поколения стал более
+						<p data-aos="fade-up" class="fst-italic mb-5">Сохранив лучшие черты своих предшественников, Chevrolet Tahoe четвертого поколения стал более
 							совершенным во всех отношениях. Продуманный до мелочей дизайн, комфортабельный и вместительный
 							салон, комплекс инновационных технологий и мультимедиа, высочайший уровень безопасности — все это
 							Chevrolet Tahoe. По-прежнему мощный полноприводный внедорожник, надежный, внушительный и статный.
 							Chevrolet Tahoe обеспечит уверенность в любой ситуации.</p>
 							
-							<div class="default-title text-center mb-3 fst-italic">ЭКСТЕРЬЕР</div>
+							<div data-aos="zoom-in" class="default-title text-center mb-3 fst-italic">ЭКСТЕРЬЕР</div>
 							<div class="row mb-5">
 								<div class="col-xl-8">
-									<div class="auto-exterier has-bg h-100" style="background-image: url('./images/tahoe5.jpg');"></div>
+									<div data-aos="fade-right" class="auto-exterier has-bg h-100" style="background-image: url('./images/tahoe5.jpg');"></div>
 								</div>
-								<div class="col-xl-4">
+								<div data-aos="fade-left" class="col-xl-4">
 									<p class="fw- fs-2 fst-italic">CHEVROLET TAHOE – ЭТО БРУТАЛЬНЫЙ ВНЕДОРОЖНИК</p>
 									<p class="text-justify">с монументальным обликом, который восхищает своей
 										«двухэтажной» оптикой, увеличенной радиаторной
@@ -277,24 +289,24 @@
 								</div>
 							</div>
 							
-							<div class="default-title text-center mb-3 fst-italic">ИНТЕРЬЕР</div>
+							<div data-aos="zoom-in" class="default-title text-center mb-3 fst-italic">ИНТЕРЬЕР</div>
 							<div class="row gy-4">
 								<div class="col-12">
-									<div class="auto-interier has-bg" style="background-image: url('./images/inside1.jpg');"></div>
+									<div data-aos="zoom-in" data-aos-delay="50" class="auto-interier has-bg" style="background-image: url('./images/inside1.jpg');"></div>
 								</div>
 								<div class="col-md-4">
-									<div class="auto-interier has-bg" style="background-image: url('./images/inside2.jpg');"></div>
+									<div data-aos="zoom-in" data-aos-delay="100" class="auto-interier has-bg" style="background-image: url('./images/inside2.jpg');"></div>
 								</div>
 								<div class="col-md-4">
-									<div class="auto-interier has-bg" style="background-image: url('./images/inside3.jpg');"></div>
+									<div data-aos="zoom-in" data-aos-delay="150" class="auto-interier has-bg" style="background-image: url('./images/inside3.jpg');"></div>
 								</div>
 								<div class="col-md-4">
-									<div class="auto-interier has-bg" style="background-image: url('./images/inside4.jpg');"></div>
+									<div data-aos="zoom-in" data-aos-delay="200" class="auto-interier has-bg" style="background-image: url('./images/inside4.jpg');"></div>
 								</div>
 							</div>
 							<div class="row my-5">
 								<div class="col-md-6">
-									<div class="">
+									<div data-aos="fade-right" class="">
 										<span class="fw-bold">КАЖДАЯ ДЕТАЛЬ CHEVROLET TAHOE</span> создана для комфортного
 										вождения и пребывания в качестве пассажира. Один из самых
 										просторных салонов в своем классе, продуман до мелочей. Каждая
@@ -303,7 +315,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="">
+									<div data-aos="fade-left" class="">
 										<span class="fw-bold">КАПИТАНСКИЙ МОСТИК</span> – это уникальная черта Chevrolet Tahoe. Двойной
 										кокпит разделяет переднюю часть салона автомобиля на две
 										равноправные части, создавая обособленное пространство, как для
@@ -313,9 +325,9 @@
 								</div>
 							</div>
 							
-							<div class="default-title text-center mb-3 fst-italic">ТЕХНОЛОГИИ</div>
-							<div class="auto-technology has-bg mb-5" style="background-image: url('./images/tahoe6.jpg');"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? </p>
+							<div data-aos="zoom-in" class="default-title text-center mb-3 fst-italic">ТЕХНОЛОГИИ</div>
+							<div data-aos="zoom-in" class="auto-technology has-bg mb-5" style="background-image: url('./images/tahoe6.jpg');"></div>
+							<p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis a tenetur ratione saepe ex nesciunt, nihil repellat rerum veritatis obcaecati ducimus! Nostrum asperiores ipsum quam autem corrupti, id impedit? </p>
 					</div>
 					
 				</div>
@@ -326,16 +338,16 @@
 			<footer>
 					<div class="footer-top">
 						<div class="container">
-							<div class="row row-cols-xl-5 row-cols-md-2 row-cols-1 mb-sm-5 mb-3 gx-5 gy-4">
-								<div>
+							<div class="row justify-content-xl-center mb-sm-5 mb-3 gx-5 gy-4">
+								<div class="col-xl-3 col-lg-4 col-6" data-aos="fade-up">
 									<a class="d-inline-block footer-logo mb-3" href="#!">
 										<img class="d-block w-100" src="./images/logo.png" alt="">
 									</a>
 									<div class="text-white mb-4">Адрес: <br> 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
 									<div class="text-white mb-4">Call center: <br> <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
 								</div>
-								<div>
-									<span class="d-block fs-1 text-white mb-2">О сервисе</span>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="50">
+									<span class="d-block fs-1 text-white mb-2 text-uppercase">О сервисе</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Компания</a></li>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Автомобили</a></li>
@@ -344,7 +356,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Инвесторов</a></li>
 									</ul>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="100">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">Помощь</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
@@ -352,7 +364,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div >
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="150">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">Услуги</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
@@ -360,8 +372,8 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div>
-									<span class="d-block fs-1 text-white mb-2 text-uppercase">UzAuto</span>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="200">
+									<span class="d-block fs-1 text-white mb-2">UzAuto</span>
 									<div class="text-white mb-4">Доступно для владельцев iOS и Android смартфонов.</div>
 									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social1.svg" alt=""></a></div>
 									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social2.svg" alt=""></a></div>
@@ -385,12 +397,13 @@
 			</footer>
 		<!--		Footer end-->
 <!--		BackToTop button-->
- 	<div class="back-top d-flex align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
+ 	<div class="back-top d-md-flex d-none align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
  		<i class="fas fa-angle-up "></i>
  	</div>
   </div>
   
 	<script src="./js/swiper.min.js"></script>
+	<script src="./js/aos.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>

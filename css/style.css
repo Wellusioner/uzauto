@@ -1,6 +1,7 @@
 @import "./bootstrap.min.css";
 @import "./swiper.min.css";
 @import "./all.min.css";
+@import "./aos.css";
 
 @font-face {
     font-family: 'Louis';
@@ -123,7 +124,7 @@ html.overflowed body{
 /*General style end*/
 
 header{
-	background: linear-gradient(to bottom, rgba(0,0,0, 0.5), transparent);
+	background: linear-gradient(to bottom, rgba(0,0,0, 0.7), transparent);
 	z-index: 5;
 }
 .header-wrapper{
@@ -251,6 +252,13 @@ header{
 	width: 100%;
 }
 /*Header end*/
+/*Feed start*/
+.mobile-feed{
+	box-shadow: 0 5px 25px rgba(0,0,0, 0.3);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+/*Feed end*/
 /*Search start*/
 .search-content{
 	top: 0;
@@ -535,7 +543,12 @@ header{
 }
 
 @media (max-width: 575px){
-	
+	.mobile-feed .feed-item{
+		font-size: 12px;
+	}
+	.mobile-feed .feed-item i{
+		font-size: 16px;
+	}
 	.banner-item{
 		height: 40vh;
 	}

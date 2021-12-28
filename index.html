@@ -12,15 +12,15 @@
   <div id="homepage">
   
 		<!--  	Header start-->
-			<header class="header position-absolute w-100">
+			<header class="header position-fixed top-0 start-0 w-100">
 				<div class="container">
 					<div class="d-xl-none d-flex align-items-center justify-content-between py-2">
-						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
-							<img width="120" src="./images/logo.png" alt="UzAuto">
-						</a>
 						<span class="search-toggle cursor-pointer text-white fs-2">
 							<i class="fas fa-search"></i>
 						</span>
+						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
+							<img width="120" src="./images/logo.png" alt="UzAuto">
+						</a>
 						<span id="hamburger" class="text-white cursor-pointer fs-2">
 							<i class="fas fa-sliders-h"></i>
 						</span>
@@ -198,6 +198,17 @@
 				</div>
 			</header>
 		<!--  	Header end-->
+				<!--		Mobile Feed start-->
+
+			<div class="d-md-none mobile-feed row row-cols-5 g-0 w-100 position-fixed bottom-0 start-0 bg-white z-index-1">
+				<a class="feed-item border-bottom border-3 border-primary text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-home"></i> <br> Bosh sahifa</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-car-alt"></i> <br> Avtobomillar</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-newspaper"></i> <br> Yangiliklar</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-photo-video"></i> <br> Media</a>
+				<a class="feed-item border-bottom border-3 text-dark px-1 py-4 text-center" href="#!"><i class="fa fa-tag"></i> <br> Narxlar</a>
+			</div>
+
+		<!--		Mobile Feed end-->
 		<!--		Search start-->
 			<div class="search-content position-fixed start-0 w-100">
 				<div class="container">
@@ -236,12 +247,12 @@
 				<div class="swiper-slide">
 						<div class="banner-item has-bg d-flex py-5" style="background-image: url('./images/tracker.jpg')">
 							<div class="container align-self-end d-flex justify-content-between align-items-center">
-								<span class="banner-item-text text-white text-uppercase">
+								<span data-aos="zoom-in" class="banner-item-text text-white text-uppercase">
 									НОВЫЙ <br>
 									Chevrolet <br>
 									tracker 2021
 								</span>
-								<span class="d-sm-block d-none"><img width="300" src="./images/chevrolet.png" alt=""></span>
+								<span data-aos="zoom-in" class="d-sm-block d-none"><img width="300" src="./images/chevrolet.png" alt=""></span>
 							</div>
 						</div>
 					</div>
@@ -274,27 +285,27 @@
 			<div class="container">
 				<div class="default-title text-center mb-3 has-line">БУДЬТЕ В КУРСЕ</div>
 				<div class="d-flex justify-content-evenly align-items-center pt-4 pb-5 fs-1">
-					<a class="text-decoration-hover" href="#!">Новости</a>
-					<a class="text-decoration-hover" href="#!">Видео-обзоры</a>
+					<a data-aos="fade-right" class="text-decoration-hover" href="#!">Новости</a>
+					<a data-aos="fade-left" class="text-decoration-hover" href="#!">Видео-обзоры</a>
 				</div>
 				<div class="gallery-group row gy-3 pb-5">
 					<div class="col-md-3 col-sm-6">
-						<a href="#!" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery1.jpg')">
+						<a href="#!" data-aos="fade-up" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery1.jpg')">
 							<span class="gallery-subitem d-flex align-items-center justify-content-center h-100 w-100 text-white position-absolute top-0 start-0">ПОДРОБНО <i class="fas fa-arrow-right ms-2"></i></span>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="#!" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery2.jpg')">
+						<a href="#!" data-aos="fade-up" data-aos-delay="50" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery2.jpg')">
 							<span class="gallery-subitem d-flex align-items-center justify-content-center h-100 w-100 text-white position-absolute top-0 start-0">ПОДРОБНО <i class="fas fa-arrow-right ms-2"></i></span>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="#!" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery3.jpg')">
+						<a href="#!" data-aos="fade-up" data-aos-delay="100" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery3.jpg')">
 							<span class="gallery-subitem d-flex align-items-center justify-content-center h-100 w-100 text-white position-absolute top-0 start-0">ПОДРОБНО <i class="fas fa-arrow-right ms-2"></i></span>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="#!" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery4.jpg')">
+						<a href="#!" data-aos="fade-up" data-aos-delay="150" class="gallery-item d-block position-relative has-bg" style="background-image: url('./images/gallery4.jpg')">
 							<span class="gallery-subitem d-flex align-items-center justify-content-center h-100 w-100 text-white position-absolute top-0 start-0">ПОДРОБНО <i class="fas fa-arrow-right ms-2"></i></span>
 						</a>
 					</div>
@@ -307,17 +318,18 @@
 				<div class="container">
 					<div class="default-title text-center mb-5 has-line">МОДЕЛЬНЫЙ РЯД</div>
 					<ul class="auto-menu w-100 d-flex flex-wrap align-items-top justify-content-center pt-4 mb-5">
-						<li data-id="1" class="auto-item cursor-pointer mb-3 mx-3 px-1 active" data-name="Tahoe" data-price="180 000" data-img="./images/chevrolet2.png">Tahoe</li>
-						<li data-id="2" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Traverse" data-price="180 000" data-img="./images/chevrolet2.png">Traverse</li>
-						<li data-id="3" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Trailblazer" data-price="180 000" data-img="./images/chevrolet2.png">Trailblazer</li>
-						<li data-id="4" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Equinox" data-price="180 000" data-img="./images/chevrolet2.png">Equinox</li>
-						<li data-id="5" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Malibu" data-price="180 000" data-img="./images/chevrolet2.png">Malibu</li>
-						<li data-id="6" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Tracker" data-price="180 000" data-img="./images/chevrolet2.png">Tracker</li>
-						<li data-id="7" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Lacetti" data-price="180 000" data-img="./images/chevrolet2.png">Lacetti</li>
-						<li data-id="8" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Cobalt" data-price="180 000" data-img="./images/chevrolet2.png">Cobalt</li>
-						<li data-id="9" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Nexia" data-price="180 000" data-img="./images/chevrolet2.png">Nexia</li>
-						<li data-id="10" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Damas" data-price="180 000" data-img="./images/chevrolet2.png">Damas</li>
-						<li data-id="11" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-name="Labo" data-price="180 000" data-img="./images/chevrolet2.png">Labo</li>
+						<li data-aos="fade-left" data-aos-delay="0" data-id="1" class="auto-item cursor-pointer mb-3 mx-3 px-1 active" data-bg-img="./images/inside.jpg" data-name="Tahoe" data-price="180 000" data-img="./images/chevrolet2.png">Tahoe</li>
+						<li data-aos="fade-left" data-aos-delay="50" data-id="2" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Traverse" data-price="180 000" data-img="./images/chevrolet2.png">Traverse</li>
+						<li data-aos="fade-left" data-aos-delay="100" data-id="3" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Trailblazer" data-price="180 000" data-img="./images/chevrolet2.png">Trailblazer</li>
+						<li data-aos="fade-left" data-aos-delay="150" data-id="4" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Equinox" data-price="180 000" data-img="./images/chevrolet2.png">Equinox</li>
+						<li data-aos="fade-left" data-aos-delay="200" data-id="5" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Malibu" data-price="180 000" data-img="./images/chevrolet2.png">Malibu</li>
+						<li data-aos="fade-left" data-aos-delay="250" data-id="6" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Tracker" data-price="180 000" data-img="./images/chevrolet2.png">Tracker</li>
+						<li data-aos="fade-left" data-aos-delay="300" data-id="7" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Lacetti" data-price="180 000" data-img="./images/chevrolet2.png">Lacetti</li>
+						<li data-aos="fade-left" data-aos-delay="350" data-id="8" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Cobalt" data-price="180 000" data-img="./images/chevrolet2.png">Cobalt</li>
+						<li data-aos="fade-left" data-aos-delay="400" data-id="9" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Nexia" data-price="180 000" data-img="./images/chevrolet2.png">Nexia</li>
+						<li data-aos="fade-left" data-aos-delay="450" data-id="10" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Damas" data-price="180 000" data-img="./images/chevrolet2.png">Damas</li>
+						<li data-aos="fade-left" data-aos-delay="500" data-id="11" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Labo" data-price="180 000" data-img="./images/chevrolet2.png">Labo</li>
+						<li data-aos="fade-left" data-aos-delay="550" data-id="12" class="auto-item cursor-pointer mb-3 mx-3 px-1" data-bg-img="./images/inside.jpg" data-name="Spark" data-price="180 000" data-img="./images/chevrolet2.png">Spark</li>
 					</ul>
 				</div>
 				<div id="selected-auto" class="position-relative">
@@ -335,10 +347,11 @@
 							<img data-auto-id="9" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
 							<img data-auto-id="10" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
 							<img data-auto-id="11" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
+							<img data-auto-id="12" class="position-absolute selected-auto-img w-100 cursor-pointer" src="./images/chevrolet2.png" alt="Chevrolet Tracker 2021">
 						</div>
 						<div class="d-flex justify-content-sm-evenly justify-content-between">
-							<div class="auto-name text-uppercase" id="selected-auto-name">Chevrolet Tahoe</div>
-							<div class="auto-price">от <span id="selected-auto-price">180 000</span> сум</div>
+							<div data-aos="fade-right" class="auto-name text-uppercase" id="selected-auto-name">Chevrolet Tahoe</div>
+							<div data-aos="fade-left" class="auto-price">от <span id="selected-auto-price">180 000</span> сум</div>
 						</div>
 					</div>
 				</div>
@@ -348,15 +361,15 @@
 			<footer>
 					<div class="footer-top">
 						<div class="container">
-							<div class="row row-cols-xl-5 row-cols-md-2 row-cols-1 mb-sm-5 mb-3 gx-5 gy-4">
-								<div>
+							<div class="row justify-content-xl-center mb-sm-5 mb-3 gx-5 gy-4">
+								<div class="col-xl-3 col-lg-4 col-6" data-aos="fade-up">
 									<a class="d-inline-block footer-logo mb-3" href="#!">
 										<img class="d-block w-100" src="./images/logo.png" alt="">
 									</a>
 									<div class="text-white mb-4">Адрес: <br> 100060, Республика Узбекистан, г.Ташкент, Мирабадский р-н., ул. Амира Темура, 13</div>
 									<div class="text-white mb-4">Call center: <br> <a class="text-white" href="tel:+998781417777">+998 78-141-77-77</a></div>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="50">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">О сервисе</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Компания</a></li>
@@ -366,7 +379,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Инвесторов</a></li>
 									</ul>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="100">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">Помощь</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
@@ -374,7 +387,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div >
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="150">
 									<span class="d-block fs-1 text-white mb-2 text-uppercase">Услуги</span>
 									<ul>
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Конкурсы</a></li>
@@ -382,7 +395,7 @@
 										<li class="mb-2"><a class="footer-item text-white" href="#!">Контакты</a></li>
 									</ul>
 								</div>
-								<div>
+								<div class="col-xl-2 col-lg-4 col-6" data-aos="fade-up" data-aos-delay="200">
 									<span class="d-block fs-1 text-white mb-2">UzAuto</span>
 									<div class="text-white mb-4">Доступно для владельцев iOS и Android смартфонов.</div>
 									<div><a class="d-inline-block mb-3" href="#!"><img src="./images/social1.svg" alt=""></a></div>
@@ -406,13 +419,14 @@
 					</div>
 			</footer>
 		<!--		Footer end-->
-<!--		BackToTop button-->
- 	<div class="back-top d-flex align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
- 		<i class="fas fa-angle-up "></i>
- 	</div>
+		<!--		BackToTop button-->
+		<div class="back-top d-md-flex d-none align-items-center justify-content-center position-fixed bg-blue rounded-circle border border-white text-white cursor-pointer">
+			<i class="fas fa-angle-up "></i>
+		</div>
   </div>
   
 	<script src="./js/swiper.min.js"></script>
+	<script src="./js/aos.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>

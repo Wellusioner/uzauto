@@ -7,11 +7,17 @@ const searchInput = document.querySelector(".search-input");
 const searchToggler = document.querySelectorAll(".search-toggle");
 const backTop = document.querySelector(".back-top");
 const autoMenuList = document.querySelectorAll(".auto-menu .auto-item");
+const autoInside = document.querySelector(".auto-behind");
 
 const hamburger = document.querySelector("#hamburger");
 const mask = document.querySelector("#bg-mask");
 const header = document.querySelector(".header");
 const closeHeaderBtn = document.querySelector(".header-wrapper .close-header");
+
+AOS.init({
+  once: true,
+	offset: 100
+});
 
 [hamburger, closeHeaderBtn, mask].forEach(function(item){
 	item.addEventListener("click", function(){
@@ -51,7 +57,7 @@ autoMenuList.forEach(function(item){
 			
 	 		const autoToBeOut = document.querySelector(".selected-auto-img.active");
 			const autoToBeIn = document.querySelector("[data-auto-id='"+ item.getAttribute("data-id") +"']");
-			console.log("[data-auto-id='"+ item.getAttribute("data-id") +"']");
+			autoInside.style.backgroundImage = "url(" + item.getAttribute("data-bg-img") + ")";
 		
 			document.querySelector(".auto-menu .auto-item.active").classList.remove("active");
 			item.classList.add("active");
