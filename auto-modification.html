@@ -12,7 +12,7 @@
   <div id="homepage">
   
 		<!--  	Header start-->
-<header class="header position-absolute w-100">
+<header class="header position-fixed top-0 start-0 w-100">
 				<div class="container">
 					<div class="d-xl-none d-flex align-items-center justify-content-between py-2">
 						<span class="search-toggle cursor-pointer text-white fs-2">
@@ -21,7 +21,6 @@
 						<a class="d-xl-none d-inline-block mb-3 ms-3" href="#!">
 							<img width="120" src="./images/logo.png" alt="UzAuto">
 						</a>
-						
 						<span id="hamburger" class="text-white cursor-pointer fs-2">
 							<i class="fas fa-sliders-h"></i>
 						</span>
@@ -153,14 +152,26 @@
 							<li>
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">ПОКУПАТЕЛЯМ</a>
 							</li>
-							<li>
-								<a class="menu-item d-block py-4 px-3 text-white" href="#!">ВЛАДЕЛЬЦАМ</a>
+							<li class="has-submenu">
+								<a class="menu-item d-block py-4 px-3 text-white" href="#!">ВЛАДЕЛЬЦАМ <i class="fa fa-angle-down"></i></a>
+								<div class="submenu d-flex position-absolute bg-white w-100 px-3 py-xl-5 py-2 start-0">
+									<ul class="w-100 d-xl-flex flex-wrap align-items-center justify-content-xxl-between justify-content-xl-center">
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">РУКОВОДСТВО</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">КОРПОРАТИВНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">НОРМАТИВНО-ПРАВОВЫЕ АКТЫ</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">ИСТОРИЯ РАЗВИТИЯ</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">СЕРТИФИКАТЫ КАЧЕСТВА</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">КОМПЛАЕНС</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">ВАКАНСИИ</a></li>
+										<li class="mx-xxl-1 mx-xl-2 mb-1"><a class="text-uppercase text-black" href="#!">О КОМПАНИИ</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 						<a class="d-xl-block d-none main-logo mx-5" href="#!">
 							<img class="d-block w-100" src="./images/logo.png" alt="UzAuto">
 						</a>
-						<ul class="d-xl-flex align-items-center justify-content-between flex-fill">
+						<ul class="menu-group d-xl-flex align-items-center justify-content-between flex-fill">
 							<li>
 								<a class="menu-item d-block py-4 px-3 text-white" href="#!">ДЛЯ ИНВЕСТОРОВ</a>
 							</li>
