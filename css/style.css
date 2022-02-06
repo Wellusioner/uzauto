@@ -440,6 +440,17 @@ header{
 	opacity: 1;
 	pointer-events: visible;
 }
+.filial-item{
+	transition: border 0.15s linear;
+}
+.filial-item-img{
+	min-height: 100px;
+}
+.filial-item:hover{
+	border-color: #164D86 !important;
+}
+
+
 
 /*For Header mobile start*/
 @media (max-width: 1199px){
@@ -540,6 +551,9 @@ header{
 	.auto-tab-item{
 		font-size: 12px;
 	}
+	.filial-item-img{
+		min-height: 35vh;
+	}
 }
 
 @media (max-width: 575px){
@@ -592,6 +606,10 @@ header{
 	.back-top{
 		bottom: 10px;
 		right: 15px;
+	}
+	
+	.filial-item-img{
+		min-height: 40vh;
 	}
 }
 
