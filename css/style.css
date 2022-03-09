@@ -451,6 +451,17 @@ header{
 	border-color: #164D86 !important;
 }
 
+.video-play{
+	transition: opacity 0.2s;
+	opacity: 0;
+}
+.video-item:hover .video-play{
+	opacity: 1;
+}
+
+.video-title{
+	background-image: linear-gradient(to bottom, transparent, #000);
+}
 
 
 /*For Header mobile start*/
